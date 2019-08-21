@@ -2,104 +2,273 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
-	<style>
-	*{
-		margin:0;
-		padding: 0;
-	}
-	html,body{
-		position: relative;
-		width: 100%;
-		height: 100%;
-		background-color: #0ea9b1;
-	}
-	.sun{
-		width: 70px;
-		height: 70px;
-		background:rgba(255, 255, 255, .3);
-		border-radius: 50%;
-		position: absolute;
-		left: 150px;
-		top: 150px;
-		animation:sun 1s linear infinite alternate;
-		box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
-
-	}
-	@keyframes sun{
-		0%{
-			transform:scale(1);
-			background:rgba(255, 255, 255, .5);
-			box-shadow: 0px 0px 3px rgba(255, 255, 255, 0.7);
-		}
-		100%{
-			transform:scale(1.1);
-			background:rgba(255, 255, 255, .6);
-			box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.7);
-		}
-	}
-	.xin{
-		width: 50px;
-		height: 50px;
-		background:rgba(255, 255, 255, .8);
-		border-radius: 50%;
-		position: absolute;
-		top: 10px;
-		left: 10px;
-		animation:xin 0.8s linear infinite alternate;
-	}
-	@keyframes xin{
-		0%{
-			transform:scale(1);
-			background:rgba(255, 255, 255, .8);
-			ox-shadow: 0px 0px 3px rgba(255, 255, 255, 0.7);
-		}
-		100%{
-			transform:scale(0.9);
-			background:rgba(255, 255, 255, .9);
-			box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.8);
-		}
-	}
-	img{
-		position: absolute;
-		bottom: 0;
-		left: 0;
-	}
-	.dahai1{
-		animation:move1 1s linear infinite alternate;
-	}
-	@keyframes move1{
-		from{
-			transform:translateY(0);
-		}
-		to{
-			transform:translateY(-20px);
-		}
-	}
-	.dahai2{
-		animation:move2 1s linear infinite alternate;
-	}
-	@keyframes move2{
-		from{
-			transform:translateY(0);
-		}
-		to{
-			transform:translateY(20px);
-		}
-	}
-	</style>
+	<title>学成在线教育平台-不是每个平台都叫学成在线</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/index.css">
+ 	<link rel="shortcut icon" href="favicon.ico">
 </head>
 <body>
-	<div>
-		<header>
-			<div class="sun">
-				<div class="xin"></div>
+	<!-- header 部分开始 -->
+	<header>
+		<div class="logo">
+			<h1>
+				<a href="#" tietle="学成在线教育平台">学成在线</a>
+			</h1>
+		</div>
+		<!-- nav部分开始 -->
+		<nav>
+			<ul>
+				<li><a href="#">首页</a></li>
+				<li><a href="#">课程</a></li>
+				<li><a href="#">职业规划</a></li>
+			</ul>
+		</nav>
+		<!-- search 搜索部分开始 -->
+		<div class="search">
+			<input type="search" name="" id="" placeholder="请输入关键字">
+			<button></button>
+		</div>
+		<!-- personal 个人中心部分开始 -->
+		<div class="personal">
+			<dl>
+				<dt>个人中心</dt>
+				<dd>
+					<s>
+						<img src="img/ld.png" alt="">
+					</s>
+					<span>
+						<img src="img/pic.png" alt="">
+						666
+					</span>
+				</dd>
+			</dl>
+
+		</div>
+	</header>
+	<!-- banner 部分开始 -->
+	<div class="banner">
+		<!-- banner 图片 -->
+		<div class="w inner">
+			<ul>
+				<li><a href="#"><img src="img/banner.jpg" alt=""></a></li>
+			</ul>
+			<!-- 侧边栏 -->
+			<div class="subnav">
+				<ul>
+					<li><a href="#">前端开发</a></li>
+					<li><a href="#">后端开发</a></li>
+					<li><a href="#">移动开发</a></li>
+					<li><a href="#">人工智能</a></li>
+					<li><a href="#">商业预测</a></li>
+					<li><a href="#">云计算&大数据</a></li>
+					<li><a href="#">运维&测试</a></li>
+					<li><a href="#">UI设计</a></li>
+					<li><a href="#">产品</a></li>
+				</ul>
 			</div>
-		</header>
-		<footer>
-			<img src="img/1.png" class="dahai1">
-			<img src="img/2.png" class="dahai2">
-		</footer>
+			<!-- 小圆点 -->
+			<div class="circle">
+				<i></i>
+				<i></i>
+				<i></i>
+				<i></i>
+				<i></i>
+				<i></i>
+			</div>
+			<!-- 课程表 -->
+			<div class="timebook">
+				<dl>
+					<dt>我的课程表</dt>
+					<dd><a href="#">
+						<s>继续学习</s> <i>程序语言设计</i><br>
+						<span>正在学习-使用对象</span>
+					</a></dd>
+					<dd><a href="#">
+						<s>继续学习</s> <i>程序语言设计</i><br>
+						<span>正在学习-使用对象</span>
+					</a></dd>
+					<dd><a href="#">
+						<s>继续学习</s> <i>程序语言设计</i><br>
+						<span>正在学习-使用对象</span>
+					</a></dd>
+				</dl>
+				<div class="more">
+					<a href="#">全部课程</a>
+				</div>
+			</div>
+		</div>	
 	</div>
+	<!-- 精品推荐部分开始 -->
+	<div class="w recommend">
+		<strong>精品推荐</strong> |
+		<a href="#">JQuert</a> |
+		<a href="#">JQuert</a> |
+		<a href="#">JQuert</a> |
+		<a href="#">JQuert</a> |
+		<a href="#">JQuert</a> |
+		<a href="#">JQuert</a>
+		<em>修改兴趣</em>
+	</div>
+	<!-- 精品 产品 开始-->
+	<div class="w products clearfix">
+		<dl>
+			<dt>
+				<strong>精品推荐</strong>
+				<a href="#">查看全部</a>
+			</dt>
+			<dd>
+				<ul>
+					<li>
+						<div class="img-f">
+							<img src="img/图层-137.png" alt="">
+						</div>
+						<h3>
+							Think PHP 5.0 博客系统实战项目演练<br>
+						</h3>
+						<i>高级</i>
+						 · <em>1125人在学习</em>
+					</li>
+					<li>
+						<div class="img-f">
+							<img src="img/图层-137.png" alt="">
+						</div>
+						<h3>
+							Think PHP 5.0 博客系统实战项目演练<br>
+						</h3>
+						<i>高级</i>
+						 · <em>1125人在学习</em>
+					</li>
+					<li>
+						<div class="img-f">
+							<img src="img/图层-137.png" alt="">
+						</div>
+						<h3>
+							Think PHP 5.0 博客系统实战项目演练<br>
+						</h3>
+						<i>高级</i>
+						 · <em>1125人在学习</em>
+					</li>
+					<li>
+						<div class="img-f">
+							<img src="img/图层-137.png" alt="">
+						</div>
+						<h3>
+							Think PHP 5.0 博客系统实战项目演练<br>
+						</h3>
+						<i>高级</i>
+						 · <em>1125人在学习</em>
+					</li>
+					<li>
+						<div class="img-f">
+							<img src="img/图层-137.png" alt="">
+						</div>
+						<h3>
+							Think PHP 5.0 博客系统实战项目演练<br>
+						</h3>
+						<i>高级</i>
+						 · <em>1125人在学习</em>
+					</li>
+					<li>
+						<div class="img-f">
+							<img src="img/图层-133.png" alt="">
+						</div>
+						<h3>
+							Think PHP 5.0 博客系统实战项目演练<br>
+						</h3>
+						<i>高级</i>
+						 · <em>1125人在学习</em>
+					</li>
+					<li>
+						<div class="img-f">
+							<img src="img/图层-133.png" alt="">
+						</div>
+						<h3>
+							Think PHP 5.0 博客系统实战项目演练<br>
+						</h3>
+						<i>高级</i>
+						 · <em>1125人在学习</em>
+					</li>
+					<li>
+						<div class="img-f">
+							<img src="img/图层-133.png" alt="">
+						</div>
+						<h3>
+							Think PHP 5.0 博客系统实战项目演练<br>
+						</h3>
+						<i>高级</i>
+						 · <em>1125人在学习</em>
+					</li>
+					<li>
+						<div class="img-f">
+							<img src="img/图层-133.png" alt="">
+						</div>
+						<h3>
+							Think PHP 5.0 博客系统实战项目演练<br>
+						</h3>
+						<i>高级</i>
+						 · <em>1125人在学习</em>
+					</li>
+					<li>
+						<div class="img-f">
+							<img src="img/图层-133.png" alt="">
+						</div>
+						<h3>
+							Think PHP 5.0 博客系统实战项目演练<br>
+						</h3>
+						<i>高级</i>
+						 · <em>1125人在学习</em>
+					</li>
+
+				</ul>
+			</dd>
+		</dl>
+	</div>
+	<!-- footer 部分开始 -->
+	<footer>
+		<div class="w foot-inner">
+			<div class="foot-l">
+				<div class="f-logo">
+					<h1>
+					<a href="#" tietle="学成在线教育平台">学成在线</a>
+					</h1>
+				</div>
+				<p>学成在线致力于普及中国最好的教育它与中国一流大学文案文案文案文案文案文案。</p>
+				<p>2017年XTCG 	Inc.21321313</p>
+				<div class="down">
+					<a href="#">下载APP</a>
+				</div>
+			</div>
+			<div class="foot-r">
+				<ul>
+					<li>
+						<dl>
+							<dt>关于学成网</dt>
+								<dd>关于</dd>
+								<dd>管理团队</dd>
+								<dd>工作机会</dd>
+								<dd>客户服务</dd>
+								<dd>帮助</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>新手指南</dt>
+								<dd>如何注册</dd>
+								<dd>如何选课</dd>
+								<dd>如何拿到毕业证</dd>
+								<dd>学分是什么</dd>
+								<dd>考试未通过怎么办</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>合作伙伴</dt>
+								<dd>合作机构</dd>
+								<dd>合作导师</dd>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</footer>
 </body>
 </html>
