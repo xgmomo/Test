@@ -1,274 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>学成在线教育平台-不是每个平台都叫学成在线</title>
-	<link rel="stylesheet" href="css/base.css">
-	<link rel="stylesheet" href="css/index.css">
- 	<link rel="shortcut icon" href="favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://unpkg.com/better-scroll@1.0.1/dist/bscroll.min.js"></script>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .demo1,.demo2{
+            display: flex;
+            flex-wrap: nowrap;
+        }
+        /* ------------------------------- */
+        .parent1{
+            width: 200px;
+            height: 200px;
+            margin:20px;
+            overflow: scroll;
+            background-color: yellow;
+        }
+        .child1{
+            width:300px;
+            height: 200px;
+            margin: 20px;
+            background-color: red; 
+        }
+        /* ------------------------------------- */
+        .parent2,.parent6{
+            display: flex;
+            flex-wrap: nowrap;
+            margin:20px;
+            width: 200px;
+            height: 160px;
+            overflow: scroll;
+            background-color: yellow;
+        }
+        .child2,.child6{
+            flex-shrink: 0;
+            width:100px;
+            height: 100px;
+            margin: 20px;
+            background-color: red; 
+        }
+        /* -------------------------------------- */
+        .parent3{
+            width: 200px;
+            height: 200px;
+            margin:20px;
+            overflow: scroll;
+            background-color: yellow;
+        }
+        .parent-child3{
+            width: 340px;
+        }
+        .child3{
+            width:300px;
+            height: 200px;
+            margin: 20px;
+            background-color: red; 
+        }
+        /* -------------------------------------- */
+        .parent4{
+            display: flex;
+            flex-wrap: nowrap;
+            width: 200px;
+            height: 200px;
+            margin:20px;
+            overflow: scroll;
+            background-color: yellow;
+        }
+        .child4{
+            flex-shrink: 0;
+            width:300px;
+            height: 200px;
+            margin: 20px;
+            background-color: red; 
+        }
+        /* ---------------------------------------- */
+        .parent5{
+            width: 200px;
+            height: 200px;
+            margin:20px;
+            overflow: scroll;
+            background-color: yellow;
+        }
+        .child5{
+            display: inline-block;
+            width:300px;
+            height: 200px;
+            margin: 20px;
+            background-color: red; 
+        }
+        /* ---------------------------------------- */
+        .parent7{
+            display: flex;
+            flex-wrap: nowrap;
+            margin:20px;
+            width: 200px;
+            height: 160px;
+            overflow: scroll;
+            background-color: yellow;
+        }
+        .child7{
+            flex-shrink: 0;
+            display:inline-block;
+            width:100px;
+            height: 100px;
+            margin: 20px;
+            background-color: red; 
+        }
+        /* ---------------------------------------- */
+        .parent8{
+            margin:20px;
+            width: 200px;
+            height: 160px;
+            background-color: yellow;
+        }
+        .child8{
+            width:300px;
+            height: 100px;
+            margin: 20px;
+            background-color: red; 
+        }
+    </style>
 </head>
 <body>
-	<!-- header 部分开始 -->
-	<header>
-		<div class="logo">
-			<h1>
-				<a href="#" tietle="学成在线教育平台">学成在线</a>
-			</h1>
-		</div>
-		<!-- nav部分开始 -->
-		<nav>
-			<ul>
-				<li><a href="#">首页</a></li>
-				<li><a href="#">课程</a></li>
-				<li><a href="#">职业规划</a></li>
-			</ul>
-		</nav>
-		<!-- search 搜索部分开始 -->
-		<div class="search">
-			<input type="search" name="" id="" placeholder="请输入关键字">
-			<button></button>
-		</div>
-		<!-- personal 个人中心部分开始 -->
-		<div class="personal">
-			<dl>
-				<dt>个人中心</dt>
-				<dd>
-					<s>
-						<img src="img/ld.png" alt="">
-					</s>
-					<span>
-						<img src="img/pic.png" alt="">
-						666
-					</span>
-				</dd>
-			</dl>
-
-		</div>
-	</header>
-	<!-- banner 部分开始 -->
-	<div class="banner">
-		<!-- banner 图片 -->
-		<div class="w inner">
-			<ul>
-				<li><a href="#"><img src="img/banner.jpg" alt=""></a></li>
-			</ul>
-			<!-- 侧边栏 -->
-			<div class="subnav">
-				<ul>
-					<li><a href="#">前端开发</a></li>
-					<li><a href="#">后端开发</a></li>
-					<li><a href="#">移动开发</a></li>
-					<li><a href="#">人工智能</a></li>
-					<li><a href="#">商业预测</a></li>
-					<li><a href="#">云计算&大数据</a></li>
-					<li><a href="#">运维&测试</a></li>
-					<li><a href="#">UI设计</a></li>
-					<li><a href="#">产品</a></li>
-				</ul>
-			</div>
-			<!-- 小圆点 -->
-			<div class="circle">
-				<i></i>
-				<i></i>
-				<i></i>
-				<i></i>
-				<i></i>
-				<i></i>
-			</div>
-			<!-- 课程表 -->
-			<div class="timebook">
-				<dl>
-					<dt>我的课程表</dt>
-					<dd><a href="#">
-						<s>继续学习</s> <i>程序语言设计</i><br>
-						<span>正在学习-使用对象</span>
-					</a></dd>
-					<dd><a href="#">
-						<s>继续学习</s> <i>程序语言设计</i><br>
-						<span>正在学习-使用对象</span>
-					</a></dd>
-					<dd><a href="#">
-						<s>继续学习</s> <i>程序语言设计</i><br>
-						<span>正在学习-使用对象</span>
-					</a></dd>
-				</dl>
-				<div class="more">
-					<a href="#">全部课程</a>
-				</div>
-			</div>
-		</div>	
-	</div>
-	<!-- 精品推荐部分开始 -->
-	<div class="w recommend">
-		<strong>精品推荐</strong> |
-		<a href="#">JQuert</a> |
-		<a href="#">JQuert</a> |
-		<a href="#">JQuert</a> |
-		<a href="#">JQuert</a> |
-		<a href="#">JQuert</a> |
-		<a href="#">JQuert</a>
-		<em>修改兴趣</em>
-	</div>
-	<!-- 精品 产品 开始-->
-	<div class="w products clearfix">
-		<dl>
-			<dt>
-				<strong>精品推荐</strong>
-				<a href="#">查看全部</a>
-			</dt>
-			<dd>
-				<ul>
-					<li>
-						<div class="img-f">
-							<img src="img/图层-137.png" alt="">
-						</div>
-						<h3>
-							Think PHP 5.0 博客系统实战项目演练<br>
-						</h3>
-						<i>高级</i>
-						 · <em>1125人在学习</em>
-					</li>
-					<li>
-						<div class="img-f">
-							<img src="img/图层-137.png" alt="">
-						</div>
-						<h3>
-							Think PHP 5.0 博客系统实战项目演练<br>
-						</h3>
-						<i>高级</i>
-						 · <em>1125人在学习</em>
-					</li>
-					<li>
-						<div class="img-f">
-							<img src="img/图层-137.png" alt="">
-						</div>
-						<h3>
-							Think PHP 5.0 博客系统实战项目演练<br>
-						</h3>
-						<i>高级</i>
-						 · <em>1125人在学习</em>
-					</li>
-					<li>
-						<div class="img-f">
-							<img src="img/图层-137.png" alt="">
-						</div>
-						<h3>
-							Think PHP 5.0 博客系统实战项目演练<br>
-						</h3>
-						<i>高级</i>
-						 · <em>1125人在学习</em>
-					</li>
-					<li>
-						<div class="img-f">
-							<img src="img/图层-137.png" alt="">
-						</div>
-						<h3>
-							Think PHP 5.0 博客系统实战项目演练<br>
-						</h3>
-						<i>高级</i>
-						 · <em>1125人在学习</em>
-					</li>
-					<li>
-						<div class="img-f">
-							<img src="img/图层-133.png" alt="">
-						</div>
-						<h3>
-							Think PHP 5.0 博客系统实战项目演练<br>
-						</h3>
-						<i>高级</i>
-						 · <em>1125人在学习</em>
-					</li>
-					<li>
-						<div class="img-f">
-							<img src="img/图层-133.png" alt="">
-						</div>
-						<h3>
-							Think PHP 5.0 博客系统实战项目演练<br>
-						</h3>
-						<i>高级</i>
-						 · <em>1125人在学习</em>
-					</li>
-					<li>
-						<div class="img-f">
-							<img src="img/图层-133.png" alt="">
-						</div>
-						<h3>
-							Think PHP 5.0 博客系统实战项目演练<br>
-						</h3>
-						<i>高级</i>
-						 · <em>1125人在学习</em>
-					</li>
-					<li>
-						<div class="img-f">
-							<img src="img/图层-133.png" alt="">
-						</div>
-						<h3>
-							Think PHP 5.0 博客系统实战项目演练<br>
-						</h3>
-						<i>高级</i>
-						 · <em>1125人在学习</em>
-					</li>
-					<li>
-						<div class="img-f">
-							<img src="img/图层-133.png" alt="">
-						</div>
-						<h3>
-							Think PHP 5.0 博客系统实战项目演练<br>
-						</h3>
-						<i>高级</i>
-						 · <em>1125人在学习</em>
-					</li>
-
-				</ul>
-			</dd>
-		</dl>
-	</div>
-	<!-- footer 部分开始 -->
-	<footer>
-		<div class="w foot-inner">
-			<div class="foot-l">
-				<div class="f-logo">
-					<h1>
-					<a href="#" tietle="学成在线教育平台">学成在线</a>
-					</h1>
-				</div>
-				<p>学成在线致力于普及中国最好的教育它与中国一流大学文案文案文案文案文案文案。</p>
-				<p>2017年XTCG 	Inc.21321313</p>
-				<div class="down">
-					<a href="#">下载APP</a>
-				</div>
-			</div>
-			<div class="foot-r">
-				<ul>
-					<li>
-						<dl>
-							<dt>关于学成网</dt>
-								<dd>关于</dd>
-								<dd>管理团队</dd>
-								<dd>工作机会</dd>
-								<dd>客户服务</dd>
-								<dd>帮助</dd>
-						</dl>
-					</li>
-					<li>
-						<dl>
-							<dt>新手指南</dt>
-								<dd>如何注册</dd>
-								<dd>如何选课</dd>
-								<dd>如何拿到毕业证</dd>
-								<dd>学分是什么</dd>
-								<dd>考试未通过怎么办</dd>
-						</dl>
-					</li>
-					<li>
-						<dl>
-							<dt>合作伙伴</dt>
-								<dd>合作机构</dd>
-								<dd>合作导师</dd>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</footer>
+    <div class="demo1">
+        <div class="parent1">
+            <div class="child1"></div>
+        </div>
+        <div class="parent3">
+            <div class="parent-child3">
+                <div class="child3">增加一个父元素</div>
+            </div>
+        </div>
+        <div class="parent4">
+            <div class="child4">增加一个兄弟元素并隐藏</div>
+            <div class="child4" style="visibility: hidden"></div>
+        </div>
+        <div class="parent5">
+            <div class="child5">dispaly:inline-block</div>
+        </div>
+    </div>
+    <div class="demo2">
+        <div class="parent2">
+            <div class="child2">第1课</div>
+            <div class="child2">第2课</div>
+            <div class="child2">第3课</div>
+        </div>
+        <div class="parent6">
+            <div class="child6">第1课 增加一个兄弟元素并隐藏</div>
+            <div class="child6">第2课</div>
+            <div class="child6">第3课</div>
+            <div class="child6" style="visibility: hidden">第4课</div>
+        </div>
+        <div class="parent7">
+            <div class="child7">第1课 dispaly:inline-block</div>
+            <div class="child7">第2课</div>
+            <div class="child7">第3课</div>
+        </div>
+    </div>
+    <div class="demo3">
+        <div class="parent8" id="parent8">
+            <div class="child8">第1课</div>
+            <!-- <div class="child8">第2课</div>
+            <div class="child8">第3课</div> -->
+        </div>
+    </div>
 </body>
+<script>
+    // var parent8=document.getElementById('parent8')
+    let scroll = new BScroll('#parent8',{
+        scrollX: true,
+    })
+</script>
 </html>
