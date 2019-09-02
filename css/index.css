@@ -1,0 +1,240 @@
+*{
+	padding: 0;
+	margin:0;
+}
+body{
+	background-color: #fff;
+	height: 3000px;
+}
+li{
+	list-style: none;
+}
+.clearfix:after{
+	content: " ";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+/*上面为页面的基本格式*/
+
+/*顶部导航栏*/
+.header{
+	height: 100px;
+	background-color: #fff;
+}
+.inner{
+	width: 1200px;
+	height: 100px;
+	/*background-color: pink;*/
+	margin: 0 auto;
+}
+.logo{
+	float: left;
+}
+.nav{
+	float: right;
+	line-height: 100px;
+}
+.nav li{
+	float: left;
+	margin: 0 20px ;
+}
+.nav li a{
+	color:#333;
+	text-decoration: none;
+}
+.nav li a:hover{
+	font-weight: 700;
+	color:#2288f6;
+}
+
+/*banner star*/
+.banner{
+	margin-top: 20px;
+	height: 620px;
+	background: url(../img/banner.jpg) no-repeat top center;
+}
+/*banner end*/
+
+.service{
+	width: 1055px;
+	margin: 75px auto 0 ;
+}
+.service-hd{
+	margin: 0 25px ;
+	border-top: 1px solid #ccc;
+}
+.service-hd h3{
+	width: 167px;
+	height: 46px;
+	margin:-15px auto 15px;
+}
+.service-hd p{
+	width: 800px;
+	color:#666666;
+	font-size: 12px;
+	line-height: 26px;
+	margin:10px auto;
+	text-align: center;	
+}
+.service-bd{
+	width: 1055px;
+	height: 500px;
+	/*background-color: red;*/
+	border-top: 1px solid #ccc;
+	/*border-bottom: 1px solid #ccc;       service的下部灰线*/  
+	margin: 30px auto;
+	padding-top: 25px;
+}
+.service-bd div{
+	width: 275px;
+	height: 230px;
+	float: left;
+	margin-right: 115px;
+}
+.service-bd .three{
+	margin-right: 0; 
+}
+.service-bd h3{
+	text-align: center;
+	margin: 15px auto;
+	font-size: 28px;
+}
+.service-bd p{
+	color:#666666;
+	font-size: 18px;
+	line-height: 26px;
+	margin:10px auto;
+	text-align: center;	
+}
+.service-bd a{
+	display:inline-block;
+	width: 165px;
+	height: 40px;
+	margin: 15px 55px;
+	border: 1px solid orange;
+	border-radius: 15px;
+	text-align: center;
+	line-height: 40px;
+	font-size: 18px;
+	text-decoration: none;
+	color:orange;
+}
+.service-bd a:hover{
+	background-color: orange;
+	color:#fff;
+}
+.anli{
+	width: 1055px;
+	margin: 75px auto 0 ;
+	position: relative;
+}
+.anli-hd{
+	margin: 0 25px ;
+	border-top: 1px solid #ccc;
+}
+.anli-hd h3{
+	width: 167px;
+	height: 46px;
+	margin:-15px auto 15px;
+}
+.anli-bd{
+	width: 1055px;
+	height: 500px;
+	/*background-color: red;*/
+	border-top: 1px solid #ccc;
+	/*border-bottom: 1px solid #ccc;       service的下部灰线*/  
+	margin: 30px auto;
+	padding-top: 25px;
+}
+.jt-l , .jt-r{
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: 50%;
+	margin-top: -25px;
+	background-color: #ccc;
+	border-radius: 50%;
+	text-decoration: none;
+	text-align: center;
+	line-height: 50px;
+	font-weight: 700;
+	color: #fff;
+}
+.anli-bd .jt-l{
+	left: -50px;
+}
+.anli-bd .jt-r{
+	right: -50px;
+}
+.jt-r:hover , .jt-l:hover{
+	background-color: skyblue;
+}
+.anli-bd .one,
+.anli-bd .two,
+.anli-bd .three
+			{
+	width: 285px;
+	height: 500px;
+	background-color: #fff;
+	float: left;
+	margin-left: 50px;
+}
+.anli-bd div .bg{
+	width: 285px;
+	height: 230px;
+	position: absolute;
+	top: 50%;
+	margin-top: -115px;
+}
+.anli-bd div .bg .mask{
+		display: inline-block;;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+		background: rgba(0, 0, 0,0.3) url(../img/bb.jpg) no-repeat center center ;
+		display:none;
+	}
+.anli-bd div .bg:hover .mask{
+		display: block;
+	}
+.anli-bd div p{
+	width: 285px;
+	height: 30px;
+	position: absolute;
+	bottom: 0;
+	background: rgba(0,0,0,0.3);
+	text-align: center;
+	color: #fff;
+}
+.meiti-bd{
+	width: 1048px;
+	height: 242px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.meiti-bd ul{
+	width: 1060px;
+	position: relative;
+}
+.meiti-bd li{
+	float: left;
+	width: 209px;
+	height: 80px;
+	border-right: 1px dashed #ccc;
+	border-bottom: 1px dashed #ccc;
+}
+/*.meiti-bd .ya{
+	width: 1053px;
+	height: 244px;
+	position: absolute;
+	top:0;
+	left: 0;
+	border: 1px solid #fff;
+	z-index: 10;
+}     
+再放一个盒子，用决定定位的方法，设置边框，压住四个方向li的外边框  */

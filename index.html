@@ -1,180 +1,144 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <script src="https://unpkg.com/better-scroll@1.0.1/dist/bscroll.min.js"></script>
-    <style>
-        *{
-            box-sizing: border-box;
-        }
-        .demo1,.demo2{
-            display: flex;
-            flex-wrap: nowrap;
-        }
-        /* ------------------------------- */
-        .parent1{
-            width: 200px;
-            height: 200px;
-            margin:20px;
-            overflow: scroll;
-            background-color: yellow;
-        }
-        .child1{
-            width:300px;
-            height: 200px;
-            margin: 20px;
-            background-color: red; 
-        }
-        /* ------------------------------------- */
-        .parent2,.parent6{
-            display: flex;
-            flex-wrap: nowrap;
-            margin:20px;
-            width: 200px;
-            height: 160px;
-            overflow: scroll;
-            background-color: yellow;
-        }
-        .child2,.child6{
-            flex-shrink: 0;
-            width:100px;
-            height: 100px;
-            margin: 20px;
-            background-color: red; 
-        }
-        /* -------------------------------------- */
-        .parent3{
-            width: 200px;
-            height: 200px;
-            margin:20px;
-            overflow: scroll;
-            background-color: yellow;
-        }
-        .parent-child3{
-            width: 340px;
-        }
-        .child3{
-            width:300px;
-            height: 200px;
-            margin: 20px;
-            background-color: red; 
-        }
-        /* -------------------------------------- */
-        .parent4{
-            display: flex;
-            flex-wrap: nowrap;
-            width: 200px;
-            height: 200px;
-            margin:20px;
-            overflow: scroll;
-            background-color: yellow;
-        }
-        .child4{
-            flex-shrink: 0;
-            width:300px;
-            height: 200px;
-            margin: 20px;
-            background-color: red; 
-        }
-        /* ---------------------------------------- */
-        .parent5{
-            width: 200px;
-            height: 200px;
-            margin:20px;
-            overflow: scroll;
-            background-color: yellow;
-        }
-        .child5{
-            display: inline-block;
-            width:300px;
-            height: 200px;
-            margin: 20px;
-            background-color: red; 
-        }
-        /* ---------------------------------------- */
-        .parent7{
-            display: flex;
-            flex-wrap: nowrap;
-            margin:20px;
-            width: 200px;
-            height: 160px;
-            overflow: scroll;
-            background-color: yellow;
-        }
-        .child7{
-            flex-shrink: 0;
-            display:inline-block;
-            width:100px;
-            height: 100px;
-            margin: 20px;
-            background-color: red; 
-        }
-        /* ---------------------------------------- */
-        .parent8{
-            margin:20px;
-            width: 200px;
-            height: 160px;
-            background-color: yellow;
-        }
-        .child8{
-            width:300px;
-            height: 100px;
-            margin: 20px;
-            background-color: red; 
-        }
-    </style>
+	<meta charset="UTF-8">
+	<title>云道首页</title>
+	<link rel="shortcut icon" href="favicon.ico"/>
+	<link rel="stylesheet" href="css/index.css" />
+	<!-- 引入外面的css文件 -->
 </head>
 <body>
-    <div class="demo1">
-        <div class="parent1">
-            <div class="child1"></div>
-        </div>
-        <div class="parent3">
-            <div class="parent-child3">
-                <div class="child3">增加一个父元素</div>
-            </div>
-        </div>
-        <div class="parent4">
-            <div class="child4">增加一个兄弟元素并隐藏</div>
-            <div class="child4" style="visibility: hidden"></div>
-        </div>
-        <div class="parent5">
-            <div class="child5">dispaly:inline-block</div>
-        </div>
-    </div>
-    <div class="demo2">
-        <div class="parent2">
-            <div class="child2">第1课</div>
-            <div class="child2">第2课</div>
-            <div class="child2">第3课</div>
-        </div>
-        <div class="parent6">
-            <div class="child6">第1课 增加一个兄弟元素并隐藏</div>
-            <div class="child6">第2课</div>
-            <div class="child6">第3课</div>
-            <div class="child6" style="visibility: hidden">第4课</div>
-        </div>
-        <div class="parent7">
-            <div class="child7">第1课 dispaly:inline-block</div>
-            <div class="child7">第2课</div>
-            <div class="child7">第3课</div>
-        </div>
-    </div>
-    <div class="demo3">
-        <div class="parent8" id="parent8">
-            <div class="child8">第1课</div>
-            <!-- <div class="child8">第2课</div>
-            <div class="child8">第3课</div> -->
-        </div>
-    </div>
+	<!-- 顶部导航栏开始 -->
+	<div class="header">
+		<div class="inner">
+		<div class="logo">  <!-- logo 左浮动 -->
+		<img src="img/logo.png" />
+		</div>
+		<div class="nav">   <!-- nav 导航栏右浮动 -->
+			<ul>
+				<li><a href="#">首页</a></li>
+				<li><a href="#">帮会成员</a></li>
+				<li><a href="#">帮会介绍</a></li>
+				<li><a href="#">帮会规则</a></li>
+				<li><a href="#">每周活动</a></li>
+				<li><a href="#">关于我们</a></li>
+			</ul>
+		</div>
+		</div>
+	</div>
+	<!-- 顶部导航栏结束 -->
+
+	<!-- banner star -->
+	<div class="banner">
+		
+	</div>
+	<!-- banner end -->
+	
+	<div class="service">
+		<div class="service-hd">
+			<h3>
+				<img src="img/ser.png" />
+			</h3>
+			<p>
+				撒，记得哈世界各地凯撒获得冠军和凯撒刘德华，hask.djhsa,dsadsadsadasdsaddddddddddddddddddd <br />sd.sahjdbsakdb,sajhjkdsm,agdhkjvmshakljdbsahdjsa,mdghsajds
+			</p>
+		</div>
+		<div class="service-bd">
+			<div class="one">
+				<div class="top">
+					<img src="img/11.png" />
+				</div>
+				<h3>寒山有木</h3>
+				<p>布拉布拉布拉布拉布拉布拉布拉布拉布拉布拉布拉布拉布拉布拉布拉布拉布拉布拉布拉布拉布</p>
+				
+					<a href="#">为他打call</a>
+				
+			</div>
+			<div class="two">
+				<div class="top">
+					<img src="img/12.png" />
+				</div>
+				<h3>我吃柠檬</h3>
+				<p>布拉布拉布拉布拉布拉布拉布拉布拉布拉布拉布拉布拉布拉布拉布拉布拉布拉布拉布拉布拉布</p>
+				
+					<a href="#">为他打call</a>
+				
+			</div>
+			<div class="three">
+				<div class="top">
+					<img src="img/13.png" />
+				</div>
+				<h3>挽卿思</h3>
+				<p>布拉布拉布拉布拉布拉布拉布拉布拉布拉布拉布拉布拉布拉布拉布拉布拉布拉布拉布拉布拉布</p>
+				
+					<a href="#">为他打call</a>
+				
+			</div>
+		</div>
+		<div class="anli">
+			<div class="anli-hd">
+				<h3>
+					<img src="img/jieshao.png" />
+				</h3>
+				底部正在施工中   底部正在施工中   底部正在施工中   底部正在施工中   底部正在施工中   底部正在施工中   底部正在施工中   底部正在施工中   
+			</div>
+			<div class="anli-bd">
+				<a href="#" class="jt-l">
+					<
+				</a>
+				<a href="#" class="jt-r">
+					>
+				</a>
+				<div class="one">
+					<div class="bg">
+						<img src="img/bg-one.png" alt="">
+						<a href="#" class="mask"></a>
+					    <p>帮助中小企业快速开启电子商务</p>
+					</div>
+				</div>
+				<div class="two">
+					<div class="bg">
+						<img src="img/bg-two.png" alt="">
+						<a href="#" class="mask"></a>
+					    <p>帮助中小企业快速开启电子商务</p>
+					</div>
+				</div>
+				<div class="three">
+					<div class="bg">
+						<img src="img/bg-three.png" alt="">
+						<a href="#" class="mask"></a>
+					    <p>帮助中小企业快速开启电子商务</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="meit">
+		<div class="service-hd">
+			<h3>
+				<img src="img/we.png" />
+			</h3>
+		</div>
+		<div class="meiti-bd">
+			<ul class="clearfix">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+<!-- 				<div class="ya"></div>  再放一个盒子，用决定定位的方法，设置边框，压住四个方向li的外边框-->
+			</ul>
+		</div>
+	</div>
 </body>
-<script>
-    // var parent8=document.getElementById('parent8')
-    let scroll = new BScroll('#parent8',{
-        scrollX: true,
-    })
-</script>
 </html>
