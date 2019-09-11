@@ -5,9 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Study</title>
+    <style>
+        html, body {
+          margin: 0;
+          padding: 0;
+          height: 100%;
+          width: 100%;
+        /*  overflow: hidden; */
+        }
+        .inner{
+         width: 50%;
+         margin: 50px auto;
+         padding: 25px;
+         background-color: rgba(180,180,180,0.5);
+         text-align: center;
+        }
+      </style>
 </head>
 <body>
-    <h2>有趣的网页例子</h2>
-    <h3><a href="./cat/index.html">小猫</a></h3>
+    <div class="inner">
+            <h2>有趣的网页例子</h2>
+            <h3><a href="./cat/index.html">小猫</a></h3>
+            <h3><a href="./snake/index.html">贪吃蛇</a></h3>
+    </div>
+    <!-- 粒子模板引入 -->
+    <script src="canvasGranuleBg.js" type="text/javascript"></script>
+    <script>
+    canvasGranuleBg.newInstanceCanvs();
+    </script>
+    <!-- 粒子模板引入结束 -->
 </body>
 </html>
