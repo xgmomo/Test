@@ -14,8 +14,14 @@
 <div class="loading"></div>
 
 <script type="text/javascript">
-var word = prompt("请输入一段文字","");
-$('.loading').text(word);
+var word = prompt("请输入一段文字");
+var boo = Boolean(word);
+if( boo == false){
+    $('.loading').text("Loading");
+}else{
+    $('.loading').text(word);
+}
+console.log(Boolean(word));
 $(document).ready(function() {
 
     let loading = $('.loading').wrapInner('<div></div>'),
